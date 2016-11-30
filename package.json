@@ -6,6 +6,7 @@
   },
   "scripts": {
     "start": "node run.js",
+    "start-android": "phonegap run android",
     "build-android-release": "phonegap platform add android; phonegap build --release",
     "build-android": "phonegap platform add android; phonegap build",
     "build": "phonegap build"

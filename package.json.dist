@@ -7,10 +7,10 @@
     "webpack": "^1.13.3"
   },
   "scripts": {
-    "postinstall": "install-app-deps",
-    "start": "electron ./app  --enable-logging",
-    "start-dev": "electron ./app dev --enable-logging",
-    "start-bundle": "electron ./app bundle --enable-logging",
-    "dist": "build -w --x64"
+    "start": "node run.js",
+    "start-android": "phonegap run android",
+    "build-android-release": "phonegap platform add android; phonegap build --release",
+    "build-android": "phonegap platform add android; phonegap build",
+    "build": "phonegap build"
   }
 }
