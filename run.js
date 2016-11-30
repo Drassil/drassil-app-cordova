@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-var phonegap=require("phonegap");
-
 var conf={};
 try {
     conf = require("./run-conf.js"); 
@@ -9,4 +7,7 @@ try {
     conf = require("./run-conf.def.js");
 }
 
+var phonegap=require("phonegap");
+
+console.log("Serving phonegap...");
 phonegap.serve(conf);

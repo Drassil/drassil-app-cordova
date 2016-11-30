@@ -8,6 +8,8 @@ var url="http://"+host+":"+port+"/";
 
 var runWeb=require("../web/run-module.js");
 
+var phonegap=require("phonegap");
+
 runWeb(host, port, true);
 
 module.exports={
