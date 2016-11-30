@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "express": "^4.14.0",
+    "phonegap": "^6.4.2",
+    "webpack": "^1.13.3"
+  },
+  "scripts": {
+    "start": "node run.js",
+    "build-android-release": "phonegap platform add android; phonegap build --release",
+    "build-android": "phonegap platform add android; phonegap build",
+    "build": "phonegap build"
+  }
+}

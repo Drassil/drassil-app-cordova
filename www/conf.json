@@ -1,0 +1,11 @@
+{
+    "appTitle": "DrassilApp",
+    "url": "",
+    "urlCrossOrigin": "",
+    "skipAjaxCheck": true,
+    "skipConnCheck" : true,
+    "customScript": "drassil-app/drassil-main.js",
+    "loadType": "iframe",
+    "iframeTarget" : "#wrapper",
+    "evalPostMessage": false
+}

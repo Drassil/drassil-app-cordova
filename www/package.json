@@ -1,0 +1,9 @@
+{
+  "name": "DrassilApp",
+  "productName" : "DrassilApp",
+  "description" : "Drassil Mobile Application",
+  "version": "0.1.0",
+  "author": "Drassil",
+  "dependencies": {
+  }
+}
