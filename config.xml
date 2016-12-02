@@ -24,6 +24,7 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
+    <preference name="StatusBarOverlaysWebView"   value="true" />
     <plugin name="cordova-plugin-console" source="npm" />
     <plugin name="cordova-plugin-inappbrowser" source="npm" />
     <plugin name="cordova-plugin-vibration" source="npm" />
@@ -36,6 +37,11 @@
     <plugin name="cordova-plugin-network-information" source="npm" />
     <plugin name="cordova-plugin-splashscreen" source="npm" />
     <plugin name="cordova-plugin-whitelist" source="npm" />
+    <plugin name="cordova-plugin-statusbar" source="npm" />
+    <plugin name="cordova-plugin-uniquedeviceid" source="npm" />
+    <feature name="StatusBar">
+        <param name="ios-package" onload="true" value="CDVStatusBar" />
+    </feature>
     <access origin="*" />
     <allow-navigation href="*" />
     <allow-intent href="http://*/*" />
