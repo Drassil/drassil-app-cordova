@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Cloning and configuring web repository in parent folder..."
-git clone https://github.com/Drassil/drassil-app.git "../web"
+git clone https://github.com/drassil-net/drassil-app.git "../web"
 
 CURRENT=`pwd`
 
