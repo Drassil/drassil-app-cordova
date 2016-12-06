@@ -3,27 +3,9 @@
 var AppFramework = function (callback) {
     var that = this;
 
-    var _confDef = {};
-    var _conf = {};
+    var _conf = window.afwk_config;
     var _lang = {};
     var _msgListener = null;
-
-    // [constructor]
-    // [TODO] avoid callback nesting using hwcore framework
-    jQuery.getJSON(AppFramework.URL_CONF + "conf.def.json", function (resDef) {
-        _confDef = resDef;
-        jQuery.getJSON(AppFramework.URL_ROOT + "conf.json", function (res) {
-            _conf = jQuery.extend(true, _confDef, res);
-
-            var l = navigator.languages instanceof Array && navigator.languages.length > 0 ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
-
-            that.loadLang(l, function () {
-                __constructor.call(that, callback);
-            });
-
-        });
-    });
-
 
     var __constructor = function (callback) {
         document.title = _conf.appTitle;
@@ -239,6 +221,12 @@ var AppFramework = function (callback) {
             }, false);
         }, false);
     };
+    
+    var l = navigator.languages instanceof Array && navigator.languages.length > 0 ? navigator.languages[0] : (navigator.language || navigator.userLanguage);
+
+    this.loadLang(l, function () {
+        __constructor.call(that, callback);
+    });
 };
 
 

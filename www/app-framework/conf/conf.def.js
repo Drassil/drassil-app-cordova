@@ -1,4 +1,4 @@
-{
+window.afwk_config={
     "appTitle": "App Framework",
     "url": "",
     "urlCrossOrigin": "",
